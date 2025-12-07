@@ -1,0 +1,1 @@
+This repository contains the trainingo f javascript of 30 Days
