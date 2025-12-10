@@ -1,1 +1,1 @@
-This repository contains the trainingo f javascript of 30 Days
+This repository contains the traning  of javascript of 30 Days
