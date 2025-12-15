@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Addition of float number</h1>
+    <script>
+        let val = Number('2.3') + Number('2.4');
+        console.log("2.3 + 2.4 = " + val);
+
+        function parse() {
+            let sum = Number('2.3') + Number('2.4');
+            let formattedSum = new Intl.NumberFormat('en-US',
+                { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(sum);
+            console.log("2.3 + 2.4 = " + formattedSum);
+        }
+        parse();
+    </script>
+</body>
+
+</html>
