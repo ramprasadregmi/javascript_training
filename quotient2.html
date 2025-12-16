@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Quotient And Remainder</h2>
+    <h3>By using Right shift </h3>
+    <p id="outpu1"></p>
+    <p id="output2"></p>
+    <script>
+        let a = 39;
+        let b = 5;
+        function numbe() {
+            let num = (a / b) >> 0;
+            document.getElementById("outpu1").innerHTML = "quotient=" + num;
+            document.getElementById("output2").innerHTML = "remainder=" + (a % b);
+        }
+        numbe()
+    </script>
+</body>
+
+</html>
