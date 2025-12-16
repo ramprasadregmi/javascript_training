@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Change the negative sign into positive by using Math sqrt()</h2>
+    <p id="output"></p>
+    <script>
+        function ConvertTopositive(number) {
+            return Math.sqrt(Math.pow(number, 2));
+        }
+        const negativeNumber = -5;
+        const positiveResult = ConvertTopositive(negativeNumber);
+        document.getElementById("output").innerHTML = "value is :" + positiveResult;
+    </script>
+</body>
+
+</html>
