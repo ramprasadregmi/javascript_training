@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Example of callback</h2>
+    <script>
+        // Callback function to process user data
+        function process(data, callback) {
+            console.log("Processing user data:", data);
+            callback();
+        }
+
+        // Function to fetch user data with a callback
+        function fetch(callback) {
+            // Simulating an API request
+            const user = { id: 1, name: "Pushkar" };
+            callback(user);
+        }
+
+        // Using the callback
+        fetch((data) => {
+            process(data, () => {
+                console.log("User data processed successfully.");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Convert Negative to Positive</title>
+</head>
+
+<body>
+
+    <h2>Output</h2>
+
+    <p id="output1"></p>
+    <p id="output2"></p>
+
+    <script>
+        function convert_positive(a) {
+            if (a < 0) {
+                a = a * -1;
+            }
+            return a;
+        }
+
+        let n = -10;
+        let m = 5;
+
+        n = convert_positive(n);
+        m = convert_positive(m);
+
+        document.getElementById("output1").innerHTML = "Value of n: " + n;
+        document.getElementById("output2").innerHTML = "Value of m: " + m;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    // Loops are handy if you wamt to run the same code over and over
+    again each time with diffrent value.
+    <h2>Examples of loop in javascript</h2>
+    <p id="demo"></p>
+    <script>
+        const cars = ["BMW", "FORD", "VOLVO", "SAAB", "AUDI"];
+        let text = "";
+        for (let i = 0; i < cars.length; i++) {
+            text += cars[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

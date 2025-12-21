@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with JavaScript</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Add Two Numbers</h2>
+
+        <label for="num1">Enter Value 1:</label><br>
+        <input type="number" id="num1"><br>
+
+        <label for="num2">Enter Value 2:</label><br>
+        <input type="number" id="num2"><br>
+
+        <label for="result">Sum:</label><br>
+        <input type="number" id="result" readonly><br><br>
+
+        <button onclick="addNumbers()">Calculate Sum</button>
+    </div>
+    <script>
+        function addNumbers() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var sum = parseFloat(num1) + parseFloat(num2);
+            document.getElementById("result").value = sum;
+
+        }
+    </script>
+    </div>
+</body>
+
+</html>
