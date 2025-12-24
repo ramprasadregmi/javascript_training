@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight-Conveter</title>
+</head>
+
+<body>
+    <h2>Pounds to Kilogram</h2>
+    <p>
+        <label>pounds</label>
+        <input id="inputpounds" type="number" placeholder="pounds" oninput="weightconveter(this.value)">
+    </p>
+    <p>kilogram:<span id="outputkilograms"></span></p>
+    <script>
+
+        function weightconveter(valNum) {
+            document.getElementById("outputkilograms").innerHTML = valNum / 2.2046;
+        }
+    </script>
+</body>
+
+</html>
